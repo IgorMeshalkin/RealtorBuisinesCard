@@ -1,0 +1,20 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: var(--font-color);
+    font-family: var(--app-font);
+    font-size: var(--big-text-size);
+    font-weight: bold;
+    text-align: center;
+    text-shadow: var(--shadow-color) 0 0 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+}

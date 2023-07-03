@@ -1,0 +1,62 @@
+.main {
+    background-color: var(--main-color);
+    height: 250px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    position: relative;
+    transition: .3s;
+}
+
+.contentContainer {
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    height: 94%;
+    width: 90%;
+    transition: .3s;
+}
+
+.title {
+    color: var(--accent-color);
+    font-family: var(--app-font);
+    font-size: var(--middle-text-size);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    text-align: center;
+    opacity: .9;
+    transition: .3s;
+}
+
+.text {
+    color: var(--font-color);
+    font-family: var(--app-font);
+    font-size: var(--middle-text-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    opacity: .9;
+    transition: .3s;
+}
+
+.main:hover {
+    background-color: var(--element-color);
+}
+
+.main:hover .contentContainer{
+    bottom: 6%;
+}
+
+.main:hover .title{
+    opacity: 1;
+}
+
+.main:hover .text{
+    opacity: 1;
+}

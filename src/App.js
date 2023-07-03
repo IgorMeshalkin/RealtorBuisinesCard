@@ -1,5 +1,6 @@
 import './App.css';
-import FirstBlock from "./components/FirstBlock/FirstBlock";
+import GreetingsBlock from "./components/GreetingsBlock/GreetingsBlock";
+import BenefitBlock from "./components/BenefitBlock/BenefitBlock";
 
 function App() {
     return (
@@ -7,7 +8,8 @@ function App() {
             <div className="backgroundImage"/>
             <div className="backgroundShadow"/>
             <div className="scrollPlace">
-                <FirstBlock/>
+                <GreetingsBlock/>
+                <BenefitBlock/>
             </div>
         </>
     );

@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './FirstBlock.module.css'
+import styles from './GreetingsBlock.module.css'
 import faceImg from '../../images/face.png'
 
-const FirstBlock = () => {
+const GreetingsBlock = () => {
     return (
         <div className={styles.background}>
             <div className={styles.textSide}>
@@ -19,4 +19,4 @@ const FirstBlock = () => {
     );
 };
 
-export default FirstBlock;
+export default GreetingsBlock;

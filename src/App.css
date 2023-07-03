@@ -7,6 +7,8 @@
     --accent-color: #ff014e;
     --font-color: #fff;
     --app-font: 'Finlandica', sans-serif;
+    --big-text-size: 50px;
+    --middle-text-size: 18px;
 }
 
 .backgroundImage {
@@ -26,7 +28,7 @@
     height: 100vh;
     width: 100vw;
     background-color: var(--main-color);
-    opacity: .4;
+    opacity: .6;
 }
 
 .scrollPlace {
@@ -42,4 +44,10 @@
 .scrollPlace::-webkit-scrollbar {
     width: 0;
     height: 0;
+}
+
+@media (max-width: 600px) {
+    :root {
+        --big-text-size: 35px;
+    }
 }
