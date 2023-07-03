@@ -1,0 +1,69 @@
+:root {
+    --text-size: 50px;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-color);
+    display: flex;
+}
+
+.textSide {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.regularText {
+    font-family: var(--app-font);
+    font-size: var(--text-size);
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+.accentText {
+    font-family: var(--app-font);
+    font-size: var(--text-size);
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.photoSide {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faceImage {
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .background {
+        flex-direction: column-reverse;
+    }
+
+    .textSide {
+        height: 50%;
+        width: 100%;
+    }
+
+    .photoSide {
+        height: 50%;
+        width: 100%;
+    }
+
+    .faceImage {
+        background-color: var(--element-color);
+        box-shadow: 0 0 20px var(--shadow-color);
+    }
+
+    :root {
+        --text-size: 35px;
+    }
+}
