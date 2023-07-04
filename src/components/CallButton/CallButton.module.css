@@ -1,0 +1,107 @@
+.container {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    height: 50px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    font-size: var(--middle-text-size);
+    font-family: var(--app-font);
+    color: var(--font-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+}
+
+.notActiveButton {
+    transition: .3s;
+}
+
+.main:hover .notActiveButton{
+    transform: translateY(-3px);
+}
+
+.callButton {
+    height: 50px;
+    width: 50px;
+    background-color: var(--element-color);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px var(--shadow-color);
+    cursor: pointer;
+}
+
+.callButtonLong {
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--element-color);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px var(--shadow-color);
+    cursor: pointer;
+}
+
+.icon {
+    height: 80%;
+}
+
+.iconSmall {
+    height: 60%;
+}
+
+.phoneNumber {
+    margin-left: 10px;
+    font-family: Calibri, serif;
+    color: var(--font-color);
+    font-size: calc(var(--middle-text-size) + 3px);
+    font-weight: bold;
+}
+
+.appearsLeft {
+    display: flex;
+    animation: appearsLeftAnimation 0.3s ease-in-out;
+}
+
+@keyframes appearsLeftAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*.shiftRight {*/
+/*    animation: shiftRightAnimation 0.3s ease-in-out;*/
+/*}*/
+
+/*@keyframes shiftRightAnimation {*/
+/*    0% {*/
+/*        opacity: 1;*/
+/*        transform: translateX(0);*/
+/*    }*/
+/*    100% {*/
+/*        opacity: 0;*/
+/*        transform: translateX(50%);*/
+/*    }*/
+/*}*/
+
