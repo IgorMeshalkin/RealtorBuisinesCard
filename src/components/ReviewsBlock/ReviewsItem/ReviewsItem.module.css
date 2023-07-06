@@ -1,0 +1,136 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftSide {
+    width: 250px;
+    height: 400px;
+    background-color: var(--element-color);
+    box-shadow: 8px 8px 10px var(--shadow-color);
+    border-radius: 10px;
+}
+
+.imageContainer {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 230px;
+    border-radius: 10px;
+}
+
+.clientInfoContainer {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clientName {
+    font-family: var(--app-font);
+    font-size: calc(var(--middle-text-size) + 3px);
+    color: var(--font-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 40%;
+    width: 90%;
+}
+
+.operationType {
+    font-family: var(--app-font);
+    font-size: var(--middle-text-size);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    height: 30%;
+    width: 90%;
+}
+
+.operationDate {
+    font-family: var(--app-font);
+    font-size: var(--middle-text-size);
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    height: 30%;
+    width: 90%;
+}
+
+.rightSide {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.starsArea {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: var(--accent-color);
+    padding-left: 20px;
+    text-shadow: 3px 3px 3px var(--shadow-color);
+}
+
+.textArea {
+    height: 320px;
+    width: 100%;
+    background-color: var(--element-color);
+    box-shadow: 8px 8px 10px var(--shadow-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    height: 90%;
+    width: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: var(--app-font);
+    font-size: var(--middle-text-size);
+    color: var(--font-color);
+    white-space: break-spaces;
+}
+
+.text::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    white-space: break-spaces;
+}
+
+@media (max-width: 800px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .rightSide {
+        width: 250px;
+        height: 420px;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .starsArea {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        font-size: 25px;
+        color: var(--accent-color);
+        padding-left: 20px;
+        text-shadow: 3px 3px 3px var(--shadow-color);
+    }
+}

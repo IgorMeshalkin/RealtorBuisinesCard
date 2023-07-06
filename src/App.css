@@ -2,7 +2,8 @@
 
 :root {
     --main-color: #212428;
-    --element-color: #202226;
+    --rgb-main-color: 33, 36, 40;
+    --element-color: #18191d;
     --shadow-color: #1a1c20;
     --accent-color: #ff014e;
     --font-color: #fff;
@@ -50,4 +51,22 @@
     :root {
         --big-text-size: 35px;
     }
+}
+
+.alert-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+.alert-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+    opacity: 1;
+}
+.alert-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
 }

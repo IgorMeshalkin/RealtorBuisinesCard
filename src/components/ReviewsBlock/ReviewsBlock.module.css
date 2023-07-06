@@ -1,0 +1,98 @@
+.main {
+    width: 100%;
+    background-color: rgba(var(--rgb-main-color), .9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.smallInscription {
+    font-family: var(--app-font);
+    font-size: var(--middle-text-size);
+    color: var(--accent-color);
+    margin-top: 20px;
+}
+
+.bigInscription {
+    font-family: var(--app-font);
+    font-size: var(--big-text-size);
+    color: var(--font-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.reviewContainer {
+    padding: 20px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.leftMove {
+    animation: LeftMoveAnimation .8s ease-in-out;
+}
+
+@keyframes LeftMoveAnimation {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    35% {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.rightMove {
+    animation: RightMoveAnimation .8s ease-in-out;
+}
+
+@keyframes RightMoveAnimation {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    35% {
+        opacity: 0;
+        transform: translateX(30%);
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.reviewHandlerContainer {
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+}
+
+@media (max-width: 800px) {
+    .reviewHandlerContainer {
+        width: 250px;
+        position: absolute;
+        top: 460px;
+        right: 20px;
+    }
+
+    .bigInscription {
+        margin-bottom: 0;
+    }
+}
+
