@@ -13,7 +13,7 @@
 .title {
     color: var(--accent-color);
     font-family: var(--app-font);
-    font-size: var(--middle-text-size);
+    font-size: calc(var(--middle-text-size) + 3px);
     font-weight: bold;
     display: flex;
     align-items: center;

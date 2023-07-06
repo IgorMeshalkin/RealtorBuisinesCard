@@ -4,6 +4,7 @@ import ReviewsItem from "./ReviewsItem/ReviewsItem";
 import {getReviewText} from "../../utils/texts";
 import ReviewHandler from "./ReviewHandler/ReviewHandler";
 import {getNextForLeftClick, getNextForRightClick, isMobile} from "../../utils/usefullFunctions";
+import CallButton from "../CallButton/CallButton";
 
 
 const ReviewsBlock = () => {
@@ -90,6 +91,10 @@ const ReviewsBlock = () => {
                     />
                 </div>
             </div>
+            {
+                isMobile() &&
+                <CallButton/>
+            }
         </div>
     );
 };
