@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './ServiceBlock.module.css'
 import {getServices} from "../../utils/texts";
 import ServiceItem from "./ServiceItem/ServiceItem";
