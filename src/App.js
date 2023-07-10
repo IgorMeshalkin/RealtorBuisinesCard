@@ -4,6 +4,7 @@ import BenefitBlock from "./components/BenefitBlock/BenefitBlock";
 import CallButton from "./components/CallButton/CallButton";
 import ReviewsBlock from "./components/ReviewsBlock/ReviewsBlock";
 import ServiceBlock from "./components/ServiceBlock/ServiceBlock";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <ReviewsBlock/>
                 <ServiceBlock/>
                 <CallButton/>
+                <Footer/>
             </div>
         </>
     );

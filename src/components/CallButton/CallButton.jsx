@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './CallButton.module.css'
 import phone from '../../images/phone.png'
 import sms from '../../images/sms.png'
@@ -6,8 +6,16 @@ import whatsAppImg from '../../images/whatsapp.png'
 import telegramImg from '../../images/telegram.png'
 import {isMobile} from "../../utils/usefullFunctions";
 
+const imagesSrcs = [whatsAppImg, telegramImg];
+
 const CallButton = () => {
     const [isActive, setIsActive] = useState(false);
+
+    useEffect(() => {
+        imagesSrcs.forEach(image => {
+            (new Image()).src = image;
+        })
+    }, []);
 
     return (<div className={styles.container}>
         {isActive ?
