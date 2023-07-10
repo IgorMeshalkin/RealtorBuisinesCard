@@ -3,8 +3,17 @@ import styles from './ReviewsItem.module.css'
 import firstImage from '../../../images/clients/1.jpeg'
 import secondImage from '../../../images/clients/2.jpeg'
 import thirdImage from '../../../images/clients/3.jpeg'
+import {useEffect} from "react";
+
+const imagesSrcs = [firstImage, secondImage, thirdImage];
 
 const ReviewsItem = ({review}) => {
+
+    useEffect(() => {
+        imagesSrcs.forEach(image => {
+            (new Image()).src = image;
+        })
+    }, []);
 
     const getImage = () => {
         if (review.id === 1) {

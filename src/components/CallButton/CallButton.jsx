@@ -6,7 +6,7 @@ import whatsAppImg from '../../images/whatsapp.png'
 import telegramImg from '../../images/telegram.png'
 import {isMobile} from "../../utils/usefullFunctions";
 
-const imagesSrcs = [whatsAppImg, telegramImg];
+const imagesSrcs = [phone, sms, whatsAppImg, telegramImg];
 
 const CallButton = () => {
     const [isActive, setIsActive] = useState(false);
