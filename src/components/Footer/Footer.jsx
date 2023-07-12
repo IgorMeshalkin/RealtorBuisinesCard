@@ -15,7 +15,7 @@ const Footer = () => {
                         <tbody>
                         <tr>
                             <td className={styles.contactName}>ЭЛЕКТРОННАЯ ПОЧТА:</td>
-                            <td className={styles.contactValue}>pavuprav@gmail.com</td>
+                            <td className={styles.contactValue}>aleksandr680848@gmail.com</td>
                         </tr>
                         <tr>
                             <td className={styles.contactName}>ТЕЛЕФОН:</td>
